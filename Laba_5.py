@@ -4,7 +4,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn .linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neighbors import KNeighborsRegressor
-import pandas as pd               
+import pandas as pd               # data processing
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set ()
@@ -92,5 +92,5 @@ randfor_model = RandomForestRegressor()
 fit_model(randfor_model, "Random Forest Regressor")
 print("=========================")
 
-graph_score_r2()
+print(graph_score_r2())
 print(model_eval())
